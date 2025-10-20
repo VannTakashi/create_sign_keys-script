@@ -31,7 +31,7 @@ clear
 echo "Press ENTER TWICE to skip password (about 10-15 enter hits total). Cannot use a password for inline signing!"
 mkdir ~/.android-certs
 
-for x in bluetooth media networkstack nfc platform releasekey sdk_sandbox shared testkey verifiedboot; do \
+for x in bluetooth media networkstack nfc platform releasekey sdk_sandbox shared testkey verifiedboot otakey nfc verity; do \
     ./development/tools/make_key ~/.android-certs/$x "$subject"; \
 done
 
